@@ -1,0 +1,45 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		 <style type="text/css">
+		 	.c1{
+		 		width: 100%;
+		 		height: 60px;
+		 		font-size: 15px;
+		 	}
+		 </style>
+		 <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>	 
+	</head>
+	<body>
+		<div style="width: 300px; font-size: 30px;margin: 0 auto;">傻瓜式浓度计算工具</div>
+		<div>
+			<div>请输入目标浓度</span><input type="" name="" id="i1" class="c1">
+			<div>请输入目标液量</span><input type="" name="" id="i2" class="c1" placeholder="这里输入布重乘浴比，知道了吗？？？">
+			<div>请输入稀释倍数</span><input type="" name="" id="i3" class="c1" placeholder="a克稀释10倍就加水到10a克，100倍就100a，知道了吗">
+			<div style="width: 200px;margin: 0 auto">以下人物中智商最高的是：</div>
+			<div style="width: 220px;margin: 0 auto">
+				<input type="button" name="" value="戴凯" onclick="f1()">
+				<span>&emsp;</span>
+				<input type="button" name="" value="牛顿" onclick="f2()">
+				<span>&emsp;</span>
+				<input type="button" name="" value="爱因斯坦" onclick="f2()">
+			</div>
+		</div>
+		<div style="font-size: 30px;margin-top: 30px">你要取的稀释液为:</div>
+		<div id="i4" style="font-size: 20px"></div>
+		<script type="text/javascript">
+			function f1()
+			{
+			var v1 = document.getElementById("i1").value;
+			var v2 = document.getElementById("i2").value;
+			var v3 = document.getElementById("i3").value;
+			var result= v1*v2*v3;
+			i4.innerText=result+'g';
+			}
+			function f2()
+			{
+			i4.innerText="判断力低下，不适宜使用本工具，请退出";
+			}
+		</script>
+	</body>
