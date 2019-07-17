@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+	<title>Document</title>
+</head>
+<style type="text/css">
+	*{
+	  -webkit-touch-callout:none;  /*系统默认菜单被禁用*/
+	  -webkit-user-select:none; /*webkit浏览器*/
+	  -khtml-user-select:none; /*早期浏览器*/
+	  -moz-user-select:none; /*火狐*/
+	  -ms-user-select:none;  /*IE10*/
+	  user-select:none;
+	}
+	*{
+		margin: 0px;
+	}
+	html{
+		height: 100%;
+	}
+	body{
+		height: 100%;
+	}
+	#div1{
+		font-size: 20px;
+		position: absolute;
+		display: none;
+		z-index: 0;
+	}
+	#outter{
+		color:white;
+		font-size: 40px;
+		height: 100%;
+		width:100%;
+		background:  black;
+		position: absolute;
+		z-index: 50;
+		display: block;
+	}
+	#db{
+		z-index: 100;
+		background: gray;
+		color: yellow;
+		position: absolute;
+	}
+</style>
+<body>
+	<div id="outter" tabindex="0" hidefocus="true">长按屏幕</div>
+	<div id="div1">
+		从小我就特别惧怕爸和你，怕爸是怕打，怕你是怕断生活费<br>
+
+后来离家上学后，只有学着独立来应对离别<br>
+上学的时候，没钱，初中拍毕业照的时候，我都担心了好久会不会付不起照相钱。高中的时候，同学叫我出去聚会，我也不敢。<br>
+
+还记得高三那年，我在老家过年，你问我买衣服的钱够不够，我说了一句不够，你马上就斥责我太放肆，那次我真的伤心了很久。我想既然你舍不得多给，那又何必问呢。<br>
+
+就这样一直被你们灌输的“家里没钱”影响，每次找你们要钱都感到很重的负罪感。<br>
+
+逐渐的越来越独立，越来越不敢依靠任何人，也就越来越不敢和任何人走近，无论是谁，只要走的近，我就会感到恐惧，不舒服。<br>
+
+如果爸要说我没有情义的话，<br>
+赌的倾家荡产，举家还债的大运动有情义<br>
+而我碰到黑暗的时刻，只不过想自己解决，不习惯依靠别人，可能就是冷血了吧<br>
+
+	</div>
+</body>
+
+<script type="text/javascript">
+	var outter=document.getElementById("outter")
+	var div1=document.getElementById("div1")
+	outter.addEventListener('touchstart',function(){
+			div1.style.display='block'
+			outter.style.display='none'
+			event.preventDefault();
+		})
+	outter.addEventListener('touchend',function(){
+			div1.style.display='none'
+			outter.style.display='block'
+		})
+</script>
+</html>
