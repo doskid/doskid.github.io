@@ -1,0 +1,39 @@
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #39f; }
+
+div {
+  box-sizing: border-box; }
+
+.main {
+  width: 93vw;
+  height: 93vw;
+  padding: 1vw;
+  background: #fff; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9vw;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  background: #ff6500;
+  transition: .2s ease; }
+  .grid-active {
+    z-index: 1;
+    opacity: .6;
+    background: #993d00; }
