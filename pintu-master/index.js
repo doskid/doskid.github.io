@@ -86,7 +86,7 @@ function success () {
   return flag
 }
 
-function gridClick () {
+function gridClick (dkdk) {
   let a1 = null
   let a2 = null
   $('.grid').click(function () {
@@ -107,6 +107,10 @@ function gridClick () {
         a1 = null
         a2 = null
         if (success()) {
+          alert('success')
+          destroy()
+        }
+        if (dkdk) {
           alert('success')
           destroy()
         }
